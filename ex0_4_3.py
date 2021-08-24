@@ -27,3 +27,10 @@ print(a)
 print(b)
 print(c)
 print(d)
+
+# addbyME
+try: 
+    f = c + d
+except ValueError as ERR:     
+    print(ERR)
+    print(f'Size dont match: {np.size(d)} {np.size(c)}')
