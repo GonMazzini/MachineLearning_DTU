@@ -50,3 +50,5 @@ print('Document-term matrix:')
 print(X.toarray())
 print()
 print('Ran Exercise 3.1.2')
+
+# addByMe add the data folder!

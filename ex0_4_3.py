@@ -29,8 +29,9 @@ print(c)
 print(d)
 
 # addbyME
+# try/catch 
 try: 
     f = c + d
 except ValueError as ERR:     
     print(ERR)
-    print(f'Size dont match: {np.size(d)} {np.size(c)}')
+    print(f'Size dont match: {np.size(d)} ~= {np.size(c)}')
