@@ -23,6 +23,7 @@ attributeNames = doc.row_values(rowx=0, start_colx=0, end_colx=4)
 # we did previously. The class labels are in the 5th column, in the rows 2 to 
 # and up to 151:
 classLabels = doc.col_values(4,1,151) # check out help(doc.col_values)
+# Returns a slice of the values of the cells in the given column.
 classNames = sorted(set(classLabels))
 classDict = dict(zip(classNames,range(len(classNames))))
 

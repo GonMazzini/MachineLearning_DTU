@@ -4,12 +4,13 @@ import pandas as pd
 
 # Load the Iris csv data using the Pandas library
 filename = '../Data/iris.csv'
-df = pd.read_csv(filename)
+df = (filename)
 
 # Pandas returns a dataframe, (df) which could be used for handling the data.
 # We will however convert the dataframe to numpy arrays for this course as 
 # is also described in the table in the exercise
-raw_data = df.get_values() 
+# raw_data = df.get_values() # CommentByMe
+raw_data = df.values
 
 # Notice that raw_data both contains the information we want to store in an array
 # X (the sepal and petal dimensions) and the information that we wish to store 
