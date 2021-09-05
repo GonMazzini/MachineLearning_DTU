@@ -1,4 +1,6 @@
 # exercise 2.2.4
+# HERE VIEW THIS AND THE VECTOR V
+# THE COLUMNS OF V GIVES YOU THE PC DIRECTIONS
 
 # (requires data structures from ex. 2.2.1)
 from ex2_1_1 import *

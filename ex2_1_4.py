@@ -1,4 +1,5 @@
 # exercise 2.1.4
+# plot the data using the PC
 # (requires data structures from ex. 2.2.1 and 2.2.3)
 from ex2_1_1 import *
 

@@ -1,15 +1,23 @@
 # exercise 2.1.3
+# plot Variance Explained vs # PCs
 # (requires data structures from ex. 2.2.1)
+
 from ex2_1_1 import *
 
 import matplotlib.pyplot as plt
 from scipy.linalg import svd
 
+
+# First SUBSTRACT THE MEAN !!! 
 # Subtract mean value from data
 Y = X - np.ones((N,1))*X.mean(axis=0)
 
 # PCA by computing SVD of Y
 U,S,V = svd(Y,full_matrices=False)
+
+# np.shape(U)   (90,8)
+# np.shape(S)   (8,)
+# np.shape(V)   (8,8)
 
 # Compute variance explained by principal components
 rho = (S*S) / (S*S).sum() 

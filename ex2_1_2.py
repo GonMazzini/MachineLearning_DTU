@@ -1,4 +1,5 @@
 # exercise 2.1.2
+#byme plot FEATURE A vs B
 
 # Imports the numpy and xlrd package, then runs the ex2_1_1 code
 from ex2_1_1 import *
@@ -14,6 +15,8 @@ j =1
 # Make a simple plot of the i'th attribute against the j'th attribute
 # Notice that X is of matrix type (but it will also work with a numpy array)
 # X = np.array(X) #Try to uncomment this line
+
+
 plot(X[:, i], X[:, j], 'o')
 
 # %%

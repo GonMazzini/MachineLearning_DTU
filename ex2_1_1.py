@@ -38,3 +38,7 @@ C = len(classNames)
 print(X)    #agregado
 
 print('Ran Exercise 2.1.1')
+
+#%% 
+# np.shape(X)
+
