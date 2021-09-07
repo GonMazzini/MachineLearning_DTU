@@ -1,6 +1,8 @@
 # exercise 2.1.2
-#byme plot FEATURE A vs B
+# byme
+# just  plot FEATURE A vs B
 
+# %%%%%%%%%%%%%%%%%
 # Imports the numpy and xlrd package, then runs the ex2_1_1 code
 from ex2_1_1 import *
 # (requires data structures from ex. 2.1.1)
