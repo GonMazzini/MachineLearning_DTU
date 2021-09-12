@@ -1,5 +1,9 @@
 # exercise 2.2.2
 
+# play with n (line 12) for number of digits
+# play with K (line 16) for number of components
+# nD number of digits for the plot
+
 from matplotlib.pyplot import (figure, subplot, plot, xlabel, ylabel, title, 
 yticks, show,legend,imshow, cm)
 from scipy.io import loadmat
@@ -58,6 +62,9 @@ title('Variance explained by principal components');
 xlabel('Principal component');
 ylabel('Variance explained value');
 
+# output to screen
+show()
+
 
 # Plot PCA of the data
 f = figure()
@@ -69,6 +76,9 @@ for c in n:
 legend(classNames)
 xlabel('PC1')
 ylabel('PC2')
+
+# output to screen
+show()
 
 
 # Visualize the reconstructed data from the first K principal components
@@ -86,7 +96,9 @@ for d in range(D):
     I = np.reshape(W[digit_ix,:]+X.mean(0), (16,16))
     imshow(I, cmap=cm.gray_r)
     title('Reconstr.');
-    
+
+# output to screen
+show()
 
 # Visualize the pricipal components
 figure(figsize=(8,6))
