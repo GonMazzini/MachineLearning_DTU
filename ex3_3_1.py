@@ -1,5 +1,10 @@
 # exercise 3.3.1
 
+# =============================================================================
+# You con play with the i to select different images
+# =============================================================================
+
+
 import matplotlib.pyplot as plt
 import numpy as np
 from scipy.io import loadmat
@@ -9,7 +14,7 @@ from similarity import similarity
 i = 1
 
 # Similarity: 'SMC', 'Jaccard', 'ExtendedJaccard', 'Cosine', 'Correlation' 
-similarity_measure = 'SMC'
+similarity_measure = 'ExtendedJaccard'
 
 # Load the digits
 # Load Matlab data file to python dict structure
@@ -55,7 +60,7 @@ for ms in range(5):
     plt.xlabel('sim={0:.3f}'.format(im_sim))
     plt.ylabel('image #{0}'.format(im_id))
     plt.xticks([]); plt.yticks([])
-    if ms==2: plt.title('Most similar images')
+    if ms==2: plt.title(f'Most similar images using: {similarity_measure}')
 
     # 5 least similar images found
     plt.subplot(3,5,11+ms)
@@ -67,8 +72,8 @@ for ms in range(5):
     plt.xlabel('sim={0:.3f}'.format(im_sim))
     plt.ylabel('image #{0}'.format(im_id))
     plt.xticks([]); plt.yticks([])
-    if ms==2: plt.title('Least similar images')
-    
+    if ms==2: plt.title(f'Least similar images using: {similarity_measure}')
+  
 plt.show()
 
 print('Ran Exercise 3.3.1')

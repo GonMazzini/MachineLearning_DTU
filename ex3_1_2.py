@@ -1,4 +1,11 @@
 # exercise 3.1.4
+
+# ============================
+# bag of word representation
+# 36 words
+# just use the regexp to ignore digit/non-word tokens (i.e ignores the 10 
+# in the last document/sentence)
+# ============================
 import numpy as np
 from sklearn.feature_extraction.text import CountVectorizer
 

@@ -1,4 +1,9 @@
 # exercise 3.1.4
+
+# ============================
+# use stop words from a txt file. Will result in >> just 19 words for the matrix isntead of 36
+# ============================
+
 from sklearn.feature_extraction.text import CountVectorizer
 
 # As before, load the corpus and preprocess:

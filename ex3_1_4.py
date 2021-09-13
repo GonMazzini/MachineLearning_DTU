@@ -1,5 +1,8 @@
 # exercise 3.1.4
 from sklearn.feature_extraction.text import CountVectorizer
+# ============================
+#  (no stop words, stemmed)
+# ============================
 
 # We'll use a widely used stemmer based:
 # Porter, M. “An algorithm for suffix stripping.” Program 14.3 (1980): 130-137.
