@@ -15,8 +15,8 @@ s1 = 2
 s2 = 3
 
 # Correlation between x1 and x2
-corr = 0.5
-
+#corr = 0.5
+corr = 1.0 #add by me
 # Covariance matrix
 S = np.matrix([[s1*s1, corr*s1*s2], [corr*s1*s2, s2*s2]])
 

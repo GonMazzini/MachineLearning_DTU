@@ -7,7 +7,7 @@ from scipy.io import loadmat
 import numpy as np
 
 # Digits to include in analysis (to include all: n = range(10))
-n = [0]
+n = [1]
 
 # Load Matlab data file to python dict structure
 # and extract variables of interest
@@ -19,6 +19,9 @@ C = len(n)
 
 # Remove digits that are not to be inspected
 class_mask = np.zeros(N).astype(bool)
+# this loop is to add to class_mask all the samples that are present when
+# defining n (line 10)
+# In the case that just 1 digit is used, then cmsk and class-mask will be same array
 for v in n:
     cmsk = (y==v)
     class_mask = class_mask | cmsk

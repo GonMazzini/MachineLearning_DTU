@@ -2,7 +2,7 @@
 
 import numpy as np
 from similarity import similarity
-
+np.random.seed(42)
 # Generate two data objects with M random attributes
 M = 5;
 x = np.random.rand(1,M)

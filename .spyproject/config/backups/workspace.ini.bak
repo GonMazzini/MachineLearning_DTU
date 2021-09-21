@@ -6,5 +6,5 @@ save_non_project_files = False
 
 [main]
 version = 0.2.0
-recent_files = ['ex3_1_2.py', 'ex3_1_3.py', 'ex3_1_4.py', 'ex3_1_5.py', 'ex3_2_1.py', 'ex3_3_1.py', 'ex3_3_2.py', '..\\02450Toolbox_Python\\Tools\\similarity.py']
+recent_files = ['ex4_1_2.py', 'ex4_1_3.py', 'ex4_1_4.py', 'ex4_1_5.py', 'ex4_1_6.py', 'ex4_1_7.py']
 

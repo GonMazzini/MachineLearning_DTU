@@ -30,4 +30,6 @@ subplot(1,3,3)
 hist(X, bins=nbins)
 show()
 
+# plot(range(0,N),X)  ADD BY ME
+
 print('Ran Exercise 4.1.1')

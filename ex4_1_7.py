@@ -6,7 +6,7 @@ import numpy as np
 from scipy.io import loadmat
 
 # Digits to include in analysis (to include all, n = range(10) )
-n = [1]
+n = [7]
 
 # Number of digits to generate from normal distributions
 ngen = 10
