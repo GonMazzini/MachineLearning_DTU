@@ -4,7 +4,7 @@ import pandas as pd
 
 # Load the Iris csv data using the Pandas library
 filename = '../Data/iris.csv'
-df = (filename)
+df = pd.read_csv(filename)
 
 # Pandas returns a dataframe, (df) which could be used for handling the data.
 # We will however convert the dataframe to numpy arrays for this course as 

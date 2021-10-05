@@ -4,9 +4,15 @@ from matplotlib.pyplot import figure, plot, xlabel, ylabel, legend, show, ylim
 import numpy as np
 import sklearn.linear_model as lm
 
+
+
+# Add by me: Kd is the "order" of the data and Km from the model
+# notice that the model fit is almost the same when Kd = Km 
+
 # Parameters
+
 Kd = 5  # no of terms for data generator
-Km = 3  # no of terms for regression model
+Km = 3 # no of terms for regression model
 N = 50  # no of data objects to train a model
 Xe =  np.linspace(-2,2,1000).reshape(-1,1) # X values to visualize true data and model
 eps_mean, eps_std = 0, 0.5          # noise parameters

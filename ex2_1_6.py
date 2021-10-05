@@ -46,6 +46,15 @@ ncols=2
 for k in range(2):
     # Obtain the PCA solution by calculate the SVD of either Y1 or Y2
     U,S,Vh = svd(Ys[k],full_matrices=False)
+    
+    ## addByme
+    if k == 0:
+        U1,S1,Vh1 = svd(Ys[0],full_matrices=False)
+        V1 = Vh1.T
+    elif k == 1:
+        U2,S2,Vh2 = svd(Ys[1],full_matrices=False)
+        V2 = Vh1.T
+        
     V=Vh.T # For the direction of V to fit the convention in the course we transpose
     # For visualization purposes, we flip the directionality of the
     # principal directions such that the directions match for Y1 and Y2.

@@ -50,7 +50,7 @@ for train_index, test_index in CV.split(X):
     # Compute squared error with feature subset selection
     textout = ''
     selected_features, features_record, loss_record = feature_selector_lr(X_train, y_train, internal_cross_validation,display=textout)
-    
+    # i.e, selected_features = array([ 9, 10, 11, 13, 16, 22], dtype=int64)
     Features[selected_features,k] = 1
     # .. alternatively you could use module sklearn.feature_selection
     if len(selected_features) is 0:

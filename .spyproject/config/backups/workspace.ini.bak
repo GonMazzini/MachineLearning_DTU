@@ -6,5 +6,5 @@ save_non_project_files = False
 
 [main]
 version = 0.2.0
-recent_files = ['ex4_1_2.py', 'ex4_1_3.py', 'ex4_1_4.py', 'ex4_1_5.py', 'ex4_1_6.py', 'ex4_1_7.py']
+recent_files = ['ex5_1_5.py', 'ex5_1_6.py', 'ex5_1_2.py', 'ex5_2_1.py', 'ex6_2_1.py', '..\\02450Toolbox_Python\\Tools\\toolbox_02450\\__init__.py']
 

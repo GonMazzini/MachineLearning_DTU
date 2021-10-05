@@ -7,7 +7,7 @@ from scipy.io import loadmat
 import numpy as np
 
 # Digits to include in analysis (to include all: n = range(10))
-n = [1]
+n = [0]
 
 # Load Matlab data file to python dict structure
 # and extract variables of interest
@@ -25,7 +25,7 @@ class_mask = np.zeros(N).astype(bool)
 for v in n:
     cmsk = (y==v)
     class_mask = class_mask | cmsk
-X = X[class_mask,:]
+X = X[class_mask,:] # select just the samples with the digit defined in n (line 10)
 y = y[class_mask]
 N = np.shape(X)[0]
 

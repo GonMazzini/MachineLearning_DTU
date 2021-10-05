@@ -45,3 +45,15 @@ yhat = np.concatenate(yhat)
 y_true = np.concatenate(y_true)
 yhat[:,0] # predictions made by first classifier.
 # Compute accuracy here.
+
+
+## addByMe (Gonzalo Mazzini)
+if __name__ == '__main__':
+    accuracy = []
+    for i in range(3):
+        accuracy.append(sum(y_true == yhat[:,i]) / 150)    
+        print(f'Accuracy for KNN classifier num. {i+1} = {accuracy[i]}')
+    
+
+
+
